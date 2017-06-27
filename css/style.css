@@ -189,6 +189,10 @@ body{
 
 #aboutpage {
 	height: 100vh;
+	border-top: 2px dotted;
+	border-bottom: 2px dotted;
+	border-color: #F8CA4D;
+	border-style: dotted;
 }
 
 .about-section-left {
@@ -200,7 +204,7 @@ body{
 
 .images {
 	width: 600px;
-	margin: 10%;
+	margin: 5%;
 }
 
 .about-section-left img {
@@ -235,10 +239,7 @@ body{
 	float: right;
 	width: 50%;
 	background-color: #FFFAE2;
-	border-top: 2px dotted;
-	border-bottom: 2px dotted;
-	border-color: #F8CA4D;
-	border-style: dotted;
+	height: 100vh;
 }
 
 .text-container {
