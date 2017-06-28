@@ -578,3 +578,39 @@ button {
 	}
 
 }
+
+@media screen and (max-width: 420px) {
+	.about-section-left {
+		width: 100%;
+		height: 100vh;
+	}
+	.about-section-right {
+		width: 100%;
+		height: 100vh;
+	}
+
+	.about-section-right .text-container {
+		width: 100%;
+		height: 100vh;
+		display: block;
+	}
+
+	.work-section-main {
+		width: 100%;
+		height: 100vh;
+	}
+
+	.work-section-text {
+		width: 100%;
+		height: 100vh;
+	}
+
+	.contact-section-left {
+		width: 100%;
+		height: 100vh;
+	}
+
+	.contact-section-right {
+		width: 100%;
+		height: 100vh;
+	}
