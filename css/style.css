@@ -18,9 +18,35 @@ body{
   clear: both;
 }
 
-#homepage {
-	height: 100vh;
+.site-wrapper {
+	position: relative;
+	top: 0;
 	width: 100%;
+	overflow: hidden;
+}
+
+div {
+	display: block;
+}
+
+.homepage-image-container {
+	text-align: center;
+	max-height: 660px;
+	max-width: 100%;
+}
+
+.image-container {
+	max-height: 660px;
+	max-width: 660px;
+	margin: auto;
+}
+
+#homepage {
+	max-width: 100%;
+	height: 100vh;
+	min-height: 866px;
+	overflow: auto;
+	background-color: #141414;
 }
 
 #homepage h1 {
@@ -28,37 +54,46 @@ body{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 32px;
 	font-weight: 300;
-	color: #141414;
+	color: #FFFAE2;
 	margin-top: 1.25%;
 }
 
-#homepage-image {
-	height: 660px;
-	width: 660px;
-	margin: auto;
+#homepage h2 {
+	text-align: center;
+	color: #FFFAE2;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	font-weight: 300;
 }
+
 
 #homepage img {
 	max-width: 100%;
+	max-height: 100%;
+	margin: 3%;
+	overflow: auto;
 }
 
 .buttons{
-	width: 54%;
-	margin: auto;
+	width: 100%;
+	margin-top: 3%;
 	overflow: auto;
+	text-align: center;
 }
 
 .buttons a {
 	text-decoration: none;
 	color: #FFFAE2;
+	text-align: center;
 }
 
 .about-button {
 	display: inline-block;
-	text-align: center;
-	width: 26.041666%;
 	height: 6.25%;
-	margin: 2.083333%;
+	width: 15%;
+	margin: 2%;
+	text-align: center;
+	overflow: auto;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	background-color: #141414;
@@ -68,7 +103,7 @@ body{
 	font-weight: 300;
 	border-radius: 2px;
 	letter-spacing: 2px;
-	border-right: 8px;
+	border: 3px;
 	border-style: solid;
 	border-color: #F8CA4D;
 	transition: background-color 1s;
@@ -82,9 +117,10 @@ body{
 .work-button{
 	display: inline-block;
 	text-align: center;
-	width: 26.041666%;
 	height: 6.25%;
-	margin: 2.083333%;
+	width: 15%;
+	margin: 2%;
+	overflow: auto;
 	background-color: #141414;
 	color: #FFFAE2;
 	font-family: 'Montserrat', sans-serif;
@@ -94,7 +130,7 @@ body{
 	padding-bottom: 30px;
 	border-radius: 2px;
 	letter-spacing: 2px;
-	border-right: 8px;
+	border: 3px;
 	border-style: solid;
 	border-color: #105B63;
 	transition: background-color 1s;
@@ -108,9 +144,10 @@ body{
 .contact-button{
 	display: inline-block;
 	text-align: center;
-	width: 26.041666%;
 	height: 6.25%;
-	margin: 2.083333%;
+	width: 15%;
+	margin: 2%;
+	overflow: auto;
 	background-color: #141414;
 	color: #FFFAE2;
 	font-family: 'Montserrat', sans-serif;
@@ -120,7 +157,7 @@ body{
 	padding-bottom: 30px;
 	border-radius: 2px;
 	letter-spacing: 2px;
-	border-right: 8px;
+	border: 3px;
 	border-style: solid;
 	border-color: #BD4932;
 	transition: background-color 1s;
@@ -168,12 +205,15 @@ body{
 }
 
 #aboutpage {
+	width: 100%;
+	min-height: 866px;
 	height: 100vh;
 	border-top: 2px dotted;
 	border-bottom: 2px dotted;
 	border-color: #F8CA4D;
 	border-style: dotted;
 }
+	
 
 .about-section-left {
 	float: left;
@@ -185,18 +225,19 @@ body{
 .about-section-left img {
 	clear: both;
 	max-width: 100%;
-	height: auto;
-	width: 600px;
-	margin: 10%;
+	margin: auto;
 }
 
 
 .second-nav {
+	overflow: auto;
 	text-align: center;
 	color: #FFFAE2;
 	font-family: 'Montserrat', 'sans-serif';
 	font-size: 24px;
 	font-weight: 300;
+	margin: auto;
+	height: auto;
 }
 
 .second-nav a{
@@ -215,14 +256,18 @@ body{
 .about-section-right {
 	float: right;
 	width: 50%;
+	margin: auto;
 	background-color: #FFFAE2;
 	height: 100vh;
 }
 
 .text-container {
 	max-width: 600px;
+	max-height: 866px;
 	margin: auto;
-	margin-top: 10%;
+	overflow: auto;
+	text-align: center;
+	padding-top: 30px;
 }
 
 .about-section-right h2{
@@ -231,7 +276,7 @@ body{
 	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
 	font-weight: 300;
-	margin-top: 6.9565217%;
+	margin-top: 5%;
 }
 
 .about-section-right h2::first-letter {
@@ -289,8 +334,14 @@ body{
 }
 
 #workpage {
-	height: 100vh;
+	clear: both;
 	width: 100%;
+	min-height: 866px;
+	height: 100vh;
+	border-top: 2px dotted;
+	border-bottom: 2px dotted;
+	border-style: dotted;
+	border-color: #105B63;
 }
 
 .work-section-main {
@@ -303,25 +354,25 @@ body{
 .work-section-main img {
 	clear: both;
 	max-width: 100%;
-	width: 660px;
-	margin-bottom: 10%;
-	margin-left: 10%;
+	margin: auto;
 }
-
 
 .work-section-text {
 	float: left;
 	height: 100vh;
 	width: 50%;
 	background-color: #FFFAE2;
-	border-top: 2px dotted;
-	border-bottom: 2px dotted;
-	border-style: dotted;
-	border-color: #105B63;
+}
+
+.work-section-text img {
+	clear: both;
+	max-width: 100%;
+	margin: auto;
 }
 
 .work-section-text h2 {
 	text-align: center;
+	padding-top: 2%;
 	color: #2F3440;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 24px;
@@ -334,14 +385,29 @@ body{
 	font-size: 30px;
 }
 
-
-.work-section-text img {
-	max-width: 100%;
+.work-section-text h3 {
+	text-align: center;
+	color: #2F3440;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+	font-weight: 300;
 }
 
-#aboutpage, #workpage, #contactpage{
-	display: inline-block;
+.work-section-text h3::first-letter {
+	text-decoration: underline;
+	text-decoration-color: #105B63;
+	font-size: 30px;
+}
+
+#contactpage {
+	clear: both;
 	width: 100%;
+	min-height: 866px;
+	height: 100vh;
+	border-top: 2px dotted;
+	border-bottom: 2px dotted;
+	border-style: dotted;
+	border-color: #BD4932;
 }
 
 .contact-section-left {
@@ -354,9 +420,7 @@ body{
 .contact-section-left img {
 	clear: both;
 	max-width: 100%;
-	width: 660px;
-	margin-bottom: 10%;
-	margin-left: 10%;
+	margin: auto;
 }
 
 .contact-section-right {
@@ -364,10 +428,6 @@ body{
 	height: 100vh;
 	width: 50%;
 	background-color: #FFFAE2;
-	border-top: 2px dotted;
-	border-bottom: 2px dotted;
-	border-style: dotted;
-	border-color: #BD4932;
 }
 
 form {
@@ -435,6 +495,33 @@ button {
 	font-weight: 300;
 }
 
+footer {
+	clear: both;
+	max-width: 100%;
+	height: 200px;
+	overflow: auto;
+	background-color: #141414;
+  	padding: 65px 0 45px;
+  	text-align: center;
+}
+
+footer ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 15px;
+
+ }
+
+ footer p {
+ 	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 32px;
+	font-weight: 300;
+	color: #FFFAE2;
+	margin-top: 30px;
+	margin-bottom: 30px;
+ }
+
 #thank-you-page h1 {
 	text-align: center;
 	font-family: 'Montserrat', sans-serif;
@@ -487,113 +574,139 @@ button {
 	padding-top: 20px;
 }
 
+@media screen and (max-width: 1200px) {
+	
+	#homepage #aboutpage #workpage #contactpage {
+    	width: 100%;
+    	height: 100vh;
+    }
+
+    .about-section-left {
+    	width: 50%;
+    	height: 100vh;
+    }
+
+    .about-section-right {
+    	width: 50%;
+    	height: 100vh;
+    }
+
+    .work-section-main {
+    	width: 50%;
+    	height: 100vh;
+    }
+
+    .work-section-text {
+    	width: 50%;
+    	height: 100vh;
+    }
+
+    .contact-section-left{
+    	width: 50%;
+    	height: 100vh;
+    }
+
+    .contact-section-right {
+    	width: 50%;
+    	height: 100vh;
+    }
+
+}
+
 @media screen and (max-width: 960px) {
-	.about-section-left {
-		width: 100%;
-		height: 100vh;
-	}
-	.about-section-right {
-		width: 100%;
-		height: 100vh;
-	}
+    
+    #homepage {
+    	width: 100%;
+    	height: 100vh;
+    }
 
-	.about-section-right .text-container {
-		width: 100%;
-		height: 100vh;
-	}
+    .about-section-left {
+    	width: 100%;
+    	margin: auto;
+    	overflow: auto;
+    	height: 100vh;
+    	min-height: 866px;
+    }
 
-	.work-section-main {
-		width: 100%;
-		height: 100vh;
-	}
+    .about-section-right {
+    	width: 100%;
+    	min-height: 866px;
+    	margin: auto;
+    	overflow: auto;
+    	height: 100vh;
+    	text-align: center;
+    	overflow: auto;
+    }
 
-	.work-section-text {
-		width: 100%;
-		height: 100vh;
-	}
+    .work-section-main {
+    	width: 100%;
+    	min-height: 866px;
+    	margin: auto;
+    	overflow: auto;
+    	height: 100vh;
+    }
 
-	.contact-section-left {
-		width: 100%;
-		height: 100vh;
-	}
+    .work-section-text {
+    	width: 100%;
+    	min-height: 866px;
+    	margin: auto;
+    	overflow: auto;
+    	height: 100vh;
+    }
 
-	.contact-section-right {
-		width: 100%;
-		height: 100vh;
-	}
+    .contact-section-left{
+    	width: 100%;
+    	min-height: 866px;
+    	margin: auto;
+    	overflow: auto;
+    	height: 100vh;
+    }
 
+    .contact-section-right {
+    	width: 100%;
+    	min-height: 866px;
+    	margin: auto;
+    	overflow: auto;
+    	height: 100vh;
+    }
 }
 
-@media screen and (max-width: 600px) {
-	.about-section-left {
-		width: 100%;
-		height: 100vh;
-	}
-	.about-section-right {
-		width: 100%;
-		height: 100vh;
-	}
+@media screen and (max-width: 768px) {
 
-	.about-section-right .text-container {
-		width: 100%;
-		height: 100vh;
-		display: block;
-	}
+     .about-section-left {
+    	width: 100%;
+    	min-height: 866px;
+    	margin: auto;
+    	overflow: auto;
+    	height: 100vh;
+    }
 
-	.work-section-main {
-		width: 100%;
-		height: 100vh;
-	}
-
-	.work-section-text {
-		width: 100%;
-		height: 100vh;
-	}
-
-	.contact-section-left {
-		width: 100%;
-		height: 100vh;
-	}
-
-	.contact-section-right {
-		width: 100%;
-		height: 100vh;
-	}
-
+    .about-section-right {
+    	width: 100%;
+    	min-height: 866px;
+    	margin: auto;
+    	overflow: auto;
+    	height: 100vh;
+    }
 }
 
-@media screen and (max-width: 420px) {
-	.about-section-left {
-		width: 100%;
-		height: 100vh;
-	}
-	.about-section-right {
-		width: 100%;
-		height: 100vh;
-	}
+@media screen and (max-width: 414px) {
 
-	.about-section-right .text-container {
-		width: 100%;
-		height: 100vh;
-		display: block;
-	}
+     .about-section-left {
+    	width: 100%;
+    	min-height: 866px;
+    	margin: auto;
+    	overflow: auto;
+    	height: 100vh;
+    }
 
-	.work-section-main {
-		width: 100%;
-		height: 100vh;
-	}
+    .about-section-right {
+    	width: 100%;
+    	min-height: 866px;
+    	margin: auto;
+    	overflow: auto;
+    	height: 100vh;
+    }
+}
 
-	.work-section-text {
-		width: 100%;
-		height: 100vh;
-	}
 
-	.contact-section-left {
-		width: 100%;
-		height: 100vh;
-	}
-
-	.contact-section-right {
-		width: 100%;
-		height: 100vh;
-	}

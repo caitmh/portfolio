@@ -5,6 +5,7 @@
 		Caitlin Marie Portfolio
 	</title>
 	<meta keywords="design, denver, caitlin hurkes, digital media">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
@@ -12,26 +13,138 @@
 </head>
 
 <body>
-	<div class="flex-container">
-		<section id="homepage" class="flex-item">
+
+	<div class="site-wrapper">
+
+		<section id="homepage">
 
 			<h1 class="section-titles">CAITLIN | MARIE</h1>
-				<div id="homepage-image">
-					<img src="images/portfolio_homepage.png" alt="digital media, design, portfolio">
+				<div class="homepage-image-container">
+					<img src="images/portfolio-homepage-hero.png" alt="digital media, design, portfolio">
 				</div>
-			<div class="buttons flex-item">
-				<div class="about-button"><a href="about.html">About</a></div>
-				<div class="work-button"><a href="work.html">Work</a></div>
-				<div class="contact-button"><a href="contact.html">Contact</a>
+			<div class="buttons">
+				<div class="about-button"><a href="#aboutpage">About</a></div>
+				<div class="work-button"><a href="#workpage">Work</a></div>
+				<div class="contact-button"><a href="#contactpage">Contact</a>
 			</div>
 			<div class="second-nav section-titles">
 				<a href="about.html" class="insite-link">About</a> | <a href="work.html" class="insite-link">Work</a> | <a href="contact.html" class="insite-link">Contact</a>
 			</div>
+
+		</section>
+
+		<section id="aboutpage">
+
+			<div class="about-section-left">
+				<div class="section-titles">
+					<h2>About</h2>
+				</div>
+				<div class="image-container">
+					<img src="images/caitlin_marie_profile.png" alt="caitlin marie hurkes">
+				</div>
+				<div class="second-nav section-titles">
+					<a href="#homepage" class="insite-link">Home</a> | <a href="#workpage" class="insite-link">Work</a> | <a href="#contactpage" class="insite-link">Contact</a>
+				</div>
+			</div>
+
+			<div class="about-section-right">
+				<div class="text-container">
+					<h2>ABOUT</h2>
+					<p>I'm a Digital Media Specialist, Designer, and Front-End Developer residing in Denver, CO.</p>
+					<h2>EDUCATION</h2>
+				<div class="education-text-left">
+					<h3>San Diego State University</h3>
+					<h4>M.A. in Political Science</h4>
+					<p>Graduated from San Diego State with a M.A. in Political Science focusing on democratic theory and practice.</p>
+				</div>
+				<div class="education-text-right">
+					<h3>California State University</h3>
+					<h4>B.A. in Political Science</h4>
+					<p>Graduated from CSU Long Beach with a B.A. in Political Science and minors in History and Middle Eastern Studies.</p>
+				</div>
+					<h2>HISTORY</h2>
+					<p>I entered the digital scene through my love of politics and quickly realized that creating, designing, and developing for any digital platform is my passion.</p>
+					<p>While I still crave the occasional in-depth research that comes from a political science background, creating brand guides, graphics, and web layouts for progressive causes, businesses, and individuals working to make the world a better place rules too.</p>
+					<h2>MOTIVATION</h2>
+					<p>I'm passionately curious.</p>
+					<p>I've always been an avid fan of mastering new skills and engaging in challenges that my future self will, <span class="italic">hopefully</span>, thank me for.</p>
+					<p>Random Facts: I always cheer for the underdog, enjoy playing Hans Zimmer soundtracks at an ear-splitting level, and <span class="yellow-text">LOVE</span> the color yellow.</p>
+				</div>
+			</div>
+
 	</section>
+
+	<section id="workpage">
+		<div class="work-section-main">
+			<div class="section-titles">
+				<h2>Work</h2>
+			</div>
+			<div class="image-container">
+				<img src="images/work_title_image.png" alt="work experience, digital media">
+			</div>
+				<nav class="second-nav section-titles"><a href="#homepage" class="insite-link">Home</a> | <a href="#aboutpage" class="insite-link">About</a> | <a href="#contactpage" class="insite-link">Contact</a></nav>
+		</div>
+
+		<div class="work-section-text">
+				<h2>EXPERIENCE</h2>
+				<div class="image-container">
+					<img src="images/portfolio_cv.png" alt="resume, experience, digital media">
+				</div>
+				<h2>SKILLS</h2>
+				<div class="image-container">
+					<img src="images/skills_icons.png" alt="skills">
+				</div>
+		</div>
+	</section>
+
+	<section id="contactpage">
+		<div class="contact-section-left">
+			<div class="section-titles">
+				<h2>Contact</h2>
+			</div>
+			<div class="image-container">
+				<img src="images/contact_title_image.png" alt="contact">
+				<nav class="second-nav section-titles"><a href="#homepage" class="insite-link">Home</a> | <a href="#aboutpage" class="insite-link">About</a> | <a href="#workpage" class="insite-link">Work</a></nav>
+			</div>
+		</div>
+
+		<div class="contact-section-right">
+			<div id="form-container">
+				<h2>Let's Start Something!</h2>
+				<form action="https://formspree.io/churkes@gmail.com" method="POST">
+ 			 		<div class="form-textfield">
+ 						<input class="form-textfield__input" type="text" name="name" placeholder="Name" id="name">
+  					</div>
+  					<div class="form-textfield">
+  						<input class="form-textfield__input" type="text" name="email" placeholder="Email" id="email">
+    				</div>
+    				<div class="form-textfield">
+  						<input class="form-textfield__input" type="text" name="message" placeholder="Tell me about your project!" id="message">
+    				</div>
+    				<button type="submit" class="form-button">Submit
+    				</button>
+    				<input type="hidden" name="_next" value="https://caitlinmarie.digital/thankyou.html"/>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+
+		<p>CAITLIN | MARIE</p>
+
+		<ul>
+			<li><a href="https://twitter.com/caitlinhurkes"><img src="images/twitter-icon.png" alt="Twitter logo"></a></li>
+			<li><a href="https://www.facebook.com/churkes"><img src="images/facebook-icon.png" alt="Facebook logo"></a></li>
+			<li><a href="https://www.linkedin.com/in/caitlin-hurkes-872713103/"><img src="images/linkedin-icon.png" alt="LinkedIn logo"></a></li>
+		</ul>
+		
+	</footer>
 
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<script src="js/script.js"></script> 
 
 	</div>
+
 </body>
 </html>
